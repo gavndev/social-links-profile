@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey700: hsl(0, 0%, 20%);
+    --clr-grey800: hsl(0, 0%, 12%);
+    --clr-grey900: hsl(0, 0%, 8%);
+    --clr-offgrey: hsl(0, 0%, 50%);
+}
+
+
+.profileCard-container{
+    background-color: var(--clr-grey900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profileCard{
+    margin: 20px;
+    background-color: var(--clr-grey800);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+h1, h3, p, a {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 1.7rem ;
+    color: var(--clr-white);
+    animation: floatOrg 8s linear infinite;
+}
+
+h3 {
+    color: var(--clr-green);
+    font-size: 2.5vh;
+    animation: floatAlt 8s linear infinite;
+}
+
+p {
+    color: hsl(0, 0%, 50%);
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.profile-image{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    height: 13vh;
+}
+
+.profileCard-linkcontainer{
+    align-content: center;
+    padding: 10px;
+    list-style: none;
+}
+
+.profileCard-linkcontainer a{
+    text-decoration: none;
+    color: var(--clr-white);
+    list-style: none;
+    display: block;
+    margin: 10px;
+    font-size: 0.8rem;
+    padding: 12px;
+    border-radius: 5px;
+    background-color:  var(--clr-grey700);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.profileCard-linkcontainer a:hover {
+    background-color: var(--clr-green);
+    transform: scale(1.05);
+    color: var(--clr-grey700);
+}
+
+.attribution {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.attribution-heart{
+    display: inline;
+    margin-left: 2px;
+    margin-bottom: 1px;
+    animation: pulseHeart 2s linear infinite;
+}
+
+.attribution-personName{
+    text-decoration: none;
+    margin-left: 2px;
+    color: hsl(0, 0%, 70%);
+}
+
+@keyframes floatOrg {
+    0%, 100% {
+        transform: translateY(0) rotate3d(0, 0, 1, 0deg);
+    }
+    25%{
+        transform: translateY() rotate3d(0, 0, 1, 1deg);
+
+    }
+    50% {
+        transform: translateY(-5px) rotate3d(0, 0, 1, -1deg);
+    }
+    75%{
+        transform: translateY() rotate3d(0, 0, 1, 1deg);
+
+    }
+}
+
+@keyframes floatAlt {
+    0%, 100% {
+        transform: translateY(0) rotate3d(0, 0, 1, 0deg);
+    }
+    25%{
+        transform: translateY() rotate3d(0, 0, 1, 0deg);
+
+    }
+
+    50% {
+        transform: translateY(-3px) rotate3d(0, 0, 1, 1deg);
+    }
+
+    75%{
+        transform: translateY() rotate3d(0, 0, 1, 0deg);
+
+    }
+}
+
+@keyframes pulseHeart {
+    0%, 100% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);  opacity: 0;
+    }
+    100% {
+        transform: scale(1); opacity: 1;
+    }
+}
