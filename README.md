@@ -126,4 +126,6 @@ expand it as I make progress on my journey! Some things I have planned are to ad
 
 Jovan Banks, my best friend, really supported me and pushed me through making this. My very first project and I'm incredibly proud of it
 
-Frontend Mentor, for the great idea and constant practice, I wil definitely be doing more!
+Frontend Mentor, for the great idea and constant practice, I will definitely be doing more!
+
+and my lovely girlfriend, Veena, who gives me constant support through everything. Look at what I made!
