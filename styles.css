@@ -145,6 +145,9 @@ p {
     transition: all 0.5s ease;
 }
 
+.divi{
+    display: block;
+}
 .sidePanel:hover p {
     opacity: 1;
     max-width: fit-content;
@@ -157,6 +160,9 @@ p {
     height: 409px;
     width: 500px;
     transition: all 0.5s ease;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
 
 
