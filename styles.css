@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    animation: fadeIn 2s ease-out;
+    animation: floatAlt-container 8s linear infinite;
 }
 
 body {
@@ -52,8 +52,11 @@ h1 {
 h2 {
     color: var(--clr-green);
     font-size: 1.0rem;
-    animation: floatAlt 8s linear infinite;
     font-weight: 600;
+}
+
+.profileCard-container h2{
+    animation: floatAlt 8s linear infinite;
 }
 
 p {
@@ -132,12 +135,14 @@ p {
     transition: all 0.5s ease;
     flex-direction: column;
     height: 55px;
+    animation: floatAlt-mini-container 16s linear infinite;
 }
 
 .aboutme-image{
-    width: auto;
-    height: 100px;
+    position: relative;
+    width: 150px;
     aspect-ratio: auto;
+    bottom: -160px;
 }
 .sidePanel p {
     opacity: 0;
@@ -145,9 +150,6 @@ p {
     transition: all 0.5s ease;
 }
 
-.divi{
-    display: block;
-}
 .sidePanel:hover p {
     opacity: 1;
     max-width: fit-content;
@@ -201,6 +203,46 @@ p {
 
     }
 }
+
+
+@keyframes floatAlt-container {
+    0%, 100% {
+        transform: translateY(0) rotate3d(0, 0, 1, 0deg);
+    }
+    25%{
+        transform: translateY() rotate3d(0, 0, 1, 0deg);
+
+    }
+
+    50% {
+        transform: translateY(-5px) rotate3d(0, 0, 1, -2deg);
+    }
+
+    75%{
+        transform: translateY() rotate3d(0, 0, 1, 0deg);
+
+    }
+}
+
+@keyframes floatAlt-mini-container {
+    0%, 100% {
+        transform: translateY(0) rotate3d(0, 0, 1, -1.5deg);
+    }
+    25%{
+        transform: translateY() rotate3d(0, 0, 1, 0deg);
+
+    }
+
+    50% {
+        transform: translateY(-7px) rotate3d(0, 0, 1, 1.5deg);
+    }
+
+    75%{
+        transform: translateY() rotate3d(0, 0, 1, 0deg);
+
+    }
+}
+
 
 @keyframes pulseHeart {
     0%, 100% {
