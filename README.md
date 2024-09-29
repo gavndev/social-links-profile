@@ -129,3 +129,7 @@ Jovan Banks, my best friend, really supported me and pushed me through making th
 Frontend Mentor, for the great idea and constant practice, I will definitely be doing more!
 
 and my lovely girlfriend, Veena, who gives me constant support through everything. Look at what I made!
+
+### Changelog
+
+- Added/Merged 'About Me' branch/feature, enhanced animations and hover effects! [9/28/2024 (20:35PM) ]
